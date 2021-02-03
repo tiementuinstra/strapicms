@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_experience_work_experiences",
+  "info": {
+    "name": "experience",
+    "icon": "building",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "tags": {
+      "collection": "category"
+    },
+    "Job": {
+      "type": "string"
+    }
+  }
+}

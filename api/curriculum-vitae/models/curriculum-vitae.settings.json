@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "curriculum_vitaes",
+  "info": {
+    "name": "Curriculum vitae",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "workExperience": {
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.work-experience"
+    },
+    "internExperience": {
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.work-experience"
+    },
+    "hobbies": {
+      "collection": "category"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "VolunteerExperience": {
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.work-experience"
+    },
+    "admin_user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "name": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

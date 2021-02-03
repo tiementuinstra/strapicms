@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "website_configurations",
+  "info": {
+    "name": "website configuration",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta"
+    },
+    "favicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

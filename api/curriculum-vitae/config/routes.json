@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/curriculum-vitae",
+      "handler": "curriculum-vitae.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/curriculum-vitae",
+      "handler": "curriculum-vitae.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/curriculum-vitae",
+      "handler": "curriculum-vitae.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "name": "menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true,
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "page": {
+      "model": "pages"
+    },
+    "category": {
+      "model": "category"
+    },
+    "url": {
+      "type": "string"
+    },
+    "menu": {
+      "model": "menu",
+      "via": "menus"
+    },
+    "menus": {
+      "collection": "menu",
+      "via": "menu"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_blank",
+        "_self",
+        "_parent",
+        "_top"
+      ],
+      "default": "_self"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "language": {
+      "model": "language"
+    },
+    "publishStartDate": {
+      "type": "datetime"
+    },
+    "publishEndDate": {
+      "type": "datetime"
+    }
+  }
+}

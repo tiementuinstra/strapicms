@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_menuitems_menuitems",
+  "info": {
+    "name": "menuitem",
+    "icon": "grip-lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "model": "category"
+    },
+    "page": {
+      "model": "pages"
+    },
+    "url": {
+      "type": "string"
+    },
+    "menu": {
+      "model": "menu"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

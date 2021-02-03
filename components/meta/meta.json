@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_meta_metas",
+  "info": {
+    "name": "meta",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "tags": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 140,
+      "unique": true
+    },
+    "admin_user": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}
