@@ -39,6 +39,11 @@
     "name": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta"
     }
   }
 }

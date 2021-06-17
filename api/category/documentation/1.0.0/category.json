@@ -620,6 +620,9 @@
               "icon": {
                 "type": "string"
               },
+              "url": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -629,6 +632,9 @@
             }
           },
           "icon": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           }
         }
@@ -648,6 +654,9 @@
             "type": "string"
           },
           "icon": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           },
           "created_by": {

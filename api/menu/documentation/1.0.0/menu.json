@@ -613,7 +613,7 @@
               "content": {
                 "type": "string"
               },
-              "image": {
+              "imagegallery": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -649,6 +649,9 @@
               "introtext": {
                 "type": "string"
               },
+              "image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -682,6 +685,9 @@
                 "type": "string"
               },
               "icon": {
+                "type": "string"
+              },
+              "url": {
                 "type": "string"
               },
               "created_by": {
@@ -742,6 +748,9 @@
               "publishEndDate": {
                 "type": "string"
               },
+              "menulocation": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -800,6 +809,9 @@
                   "type": "string"
                 },
                 "publishEndDate": {
+                  "type": "string"
+                },
+                "menulocation": {
                   "type": "string"
                 },
                 "published_at": {
@@ -921,6 +933,13 @@
             "type": "string",
             "format": "date-time"
           },
+          "menulocation": {
+            "type": "string",
+            "enum": [
+              "main",
+              "footer"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -973,6 +992,13 @@
           "publishEndDate": {
             "type": "string",
             "format": "date-time"
+          },
+          "menulocation": {
+            "type": "string",
+            "enum": [
+              "main",
+              "footer"
+            ]
           },
           "published_at": {
             "type": "string",

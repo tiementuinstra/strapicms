@@ -20,7 +20,7 @@
       "type": "richtext",
       "required": true
     },
-    "image": {
+    "imagegallery": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -47,8 +47,10 @@
       "type": "enumeration",
       "enum": [
         "default",
+        "home",
         "blog",
-        "product"
+        "product",
+        "form"
       ],
       "default": "default",
       "required": true
@@ -68,6 +70,17 @@
     "introtext": {
       "type": "text",
       "maxLength": 200
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

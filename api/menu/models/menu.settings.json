@@ -63,6 +63,13 @@
     },
     "publishEndDate": {
       "type": "datetime"
+    },
+    "menulocation": {
+      "type": "enumeration",
+      "enum": [
+        "main",
+        "footer"
+      ]
     }
   }
 }

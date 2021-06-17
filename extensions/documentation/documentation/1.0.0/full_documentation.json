@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/03/2021 4:42:09 PM"
+    "x-generation-date": "03/20/2021 5:45:07 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5567,6 +5567,9 @@
               "icon": {
                 "type": "string"
               },
+              "url": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -5576,6 +5579,9 @@
             }
           },
           "icon": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           }
         }
@@ -5595,6 +5601,9 @@
             "type": "string"
           },
           "icon": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           },
           "created_by": {
@@ -5733,6 +5742,9 @@
                     "icon": {
                       "type": "string"
                     },
+                    "url": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -5867,6 +5879,9 @@
                     "icon": {
                       "type": "string"
                     },
+                    "url": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -5903,6 +5918,9 @@
                 "type": "string"
               },
               "icon": {
+                "type": "string"
+              },
+              "url": {
                 "type": "string"
               },
               "created_by": {
@@ -6034,6 +6052,9 @@
                       "type": "string"
                     },
                     "icon": {
+                      "type": "string"
+                    },
+                    "url": {
                       "type": "string"
                     },
                     "created_by": {
@@ -6171,6 +6192,68 @@
               }
             }
           },
+          "meta": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 140
+              },
+              "admin_user": {
+                "required": [
+                  "id",
+                  "email"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "firstname": {
+                    "type": "string"
+                  },
+                  "lastname": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "resetPasswordToken": {
+                    "type": "string"
+                  },
+                  "registrationToken": {
+                    "type": "string"
+                  },
+                  "isActive": {
+                    "type": "boolean"
+                  },
+                  "roles": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "blocked": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6297,6 +6380,9 @@
                       "type": "string"
                     },
                     "icon": {
+                      "type": "string"
+                    },
+                    "url": {
                       "type": "string"
                     },
                     "created_by": {
@@ -6431,6 +6517,9 @@
                       "type": "string"
                     },
                     "icon": {
+                      "type": "string"
+                    },
+                    "url": {
                       "type": "string"
                     },
                     "created_by": {
@@ -6573,6 +6662,9 @@
                     "icon": {
                       "type": "string"
                     },
+                    "url": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -6592,6 +6684,68 @@
           },
           "name": {
             "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 140
+              },
+              "admin_user": {
+                "required": [
+                  "id",
+                  "email"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "firstname": {
+                    "type": "string"
+                  },
+                  "lastname": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "resetPasswordToken": {
+                    "type": "string"
+                  },
+                  "registrationToken": {
+                    "type": "string"
+                  },
+                  "isActive": {
+                    "type": "boolean"
+                  },
+                  "roles": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "blocked": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -6668,7 +6822,7 @@
               "content": {
                 "type": "string"
               },
-              "image": {
+              "imagegallery": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -6704,6 +6858,9 @@
               "introtext": {
                 "type": "string"
               },
+              "image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -6737,6 +6894,9 @@
                 "type": "string"
               },
               "icon": {
+                "type": "string"
+              },
+              "url": {
                 "type": "string"
               },
               "created_by": {
@@ -6797,6 +6957,9 @@
               "publishEndDate": {
                 "type": "string"
               },
+              "menulocation": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -6855,6 +7018,9 @@
                   "type": "string"
                 },
                 "publishEndDate": {
+                  "type": "string"
+                },
+                "menulocation": {
                   "type": "string"
                 },
                 "published_at": {
@@ -6976,6 +7142,13 @@
             "type": "string",
             "format": "date-time"
           },
+          "menulocation": {
+            "type": "string",
+            "enum": [
+              "main",
+              "footer"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7029,6 +7202,13 @@
             "type": "string",
             "format": "date-time"
           },
+          "menulocation": {
+            "type": "string",
+            "enum": [
+              "main",
+              "footer"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7058,7 +7238,7 @@
           "content": {
             "type": "string"
           },
-          "image": {
+          "imagegallery": {
             "type": "array",
             "items": {
               "required": [
@@ -7225,8 +7405,10 @@
             "default": "default",
             "enum": [
               "default",
+              "home",
               "blog",
-              "product"
+              "product",
+              "form"
             ]
           },
           "slug": {
@@ -7249,7 +7431,7 @@
               "content": {
                 "type": "string"
               },
-              "image": {
+              "imagegallery": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -7285,6 +7467,9 @@
               "introtext": {
                 "type": "string"
               },
+              "image": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -7315,7 +7500,7 @@
                 "content": {
                   "type": "string"
                 },
-                "image": {
+                "imagegallery": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -7351,6 +7536,9 @@
                 "introtext": {
                   "type": "string"
                 },
+                "image": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -7366,6 +7554,73 @@
           "introtext": {
             "type": "string",
             "maxLength": 200
+          },
+          "image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -7464,8 +7719,10 @@
             "default": "default",
             "enum": [
               "default",
+              "home",
               "blog",
-              "product"
+              "product",
+              "form"
             ]
           },
           "slug": {
@@ -7621,6 +7878,140 @@
             }
           },
           "favicon": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "defaultimage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "logo": {
             "required": [
               "id",
               "name",

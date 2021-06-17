@@ -443,6 +443,9 @@
                     "icon": {
                       "type": "string"
                     },
+                    "url": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -577,6 +580,9 @@
                     "icon": {
                       "type": "string"
                     },
+                    "url": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -613,6 +619,9 @@
                 "type": "string"
               },
               "icon": {
+                "type": "string"
+              },
+              "url": {
                 "type": "string"
               },
               "created_by": {
@@ -744,6 +753,9 @@
                       "type": "string"
                     },
                     "icon": {
+                      "type": "string"
+                    },
+                    "url": {
                       "type": "string"
                     },
                     "created_by": {
@@ -881,6 +893,68 @@
               }
             }
           },
+          "meta": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 140
+              },
+              "admin_user": {
+                "required": [
+                  "id",
+                  "email"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "firstname": {
+                    "type": "string"
+                  },
+                  "lastname": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "resetPasswordToken": {
+                    "type": "string"
+                  },
+                  "registrationToken": {
+                    "type": "string"
+                  },
+                  "isActive": {
+                    "type": "boolean"
+                  },
+                  "roles": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "blocked": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1007,6 +1081,9 @@
                       "type": "string"
                     },
                     "icon": {
+                      "type": "string"
+                    },
+                    "url": {
                       "type": "string"
                     },
                     "created_by": {
@@ -1141,6 +1218,9 @@
                       "type": "string"
                     },
                     "icon": {
+                      "type": "string"
+                    },
+                    "url": {
                       "type": "string"
                     },
                     "created_by": {
@@ -1283,6 +1363,9 @@
                     "icon": {
                       "type": "string"
                     },
+                    "url": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -1302,6 +1385,68 @@
           },
           "name": {
             "type": "string"
+          },
+          "meta": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 140
+              },
+              "admin_user": {
+                "required": [
+                  "id",
+                  "email"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "firstname": {
+                    "type": "string"
+                  },
+                  "lastname": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "resetPasswordToken": {
+                    "type": "string"
+                  },
+                  "registrationToken": {
+                    "type": "string"
+                  },
+                  "isActive": {
+                    "type": "boolean"
+                  },
+                  "roles": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "blocked": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

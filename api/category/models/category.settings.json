@@ -33,6 +33,9 @@
     },
     "icon": {
       "type": "string"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
